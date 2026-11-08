@@ -50,7 +50,7 @@ export function IntroSplit() {
           <Reveal delay={200} className="relative mt-14 hidden max-w-[420px] lg:block">
             <Figure
               src="/images/gallery/gallery-morning-dispatch.jpg"
-              alt="4Jasmine Dr trucks lined up in the Free Zone Enclave before dispatch"
+              alt="Trucks lined up before dispatch"
               className="aspect-card w-full"
               imageClassName="h-full w-full"
               sizes="420px"

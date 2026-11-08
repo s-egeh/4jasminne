@@ -38,7 +38,7 @@ export default function FleetPage() {
         heading="Our fleet"
         standfirst="Vehicles and handling equipment matched to the goods, maintained to schedule and checked before every departure."
         image="/images/fleet/fleet-articulated-truck.jpg"
-        imageAlt="4Jasmine Dr trucks lined up in the Free Zone Enclave, Tema"
+        imageAlt="A tractor unit pulling a tipper trailer"
         crumbs={[{ label: 'Fleet', href: '/fleet' }]}
       />
 

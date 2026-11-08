@@ -46,7 +46,7 @@ export default function TeamPage() {
         heading="Management team"
         standfirst="The people accountable for your goods, from the port to the final delivery."
         image="/images/gallery/gallery-head-office.jpg"
-        imageAlt="The 4Jasmine Dr team at the office in the Free Zone Enclave, Tema"
+        imageAlt="An office building"
         crumbs={[{ label: 'Team', href: '/team' }]}
       />
 

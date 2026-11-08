@@ -166,8 +166,22 @@ path, and re-run `npm run build:brand`.
 
 ### Photography — `/public/images/`
 
-Every folder ships empty. Every path below is referenced in code and shows a branded placeholder
-until the file lands. Missing photographs are detected **at build time**:
+**Temporary stock photography — undo this when the client's photographs arrive.** 20 of the 27
+photographs used by published pages are temporary public-domain stock images (CC0 or the Public
+Domain Mark), added on 2026-11-08 so the site does not go live on placeholders. They show other
+companies' trucks, equipment and ports, not 4Jasmine Dr's. For that reason every alt text was
+neutralised to say only what is in the picture — "A tanker truck on a mountain highway", not "A
+loaded 4Jasmine Dr truck on a Ghanaian highway" — and so were the four `/gallery` captions that
+described a stock photograph. Both must be reversed as each client photograph lands: replace the
+file at the same path, rewrite its alt text in `src/data` (and in the page file, for a page hero)
+to describe the client's own photograph, and delete its row from `docs/image-credits.md`. That file
+lists every stock image with its source, photographer and licence, and the seven slots that are
+still empty. Three shots the table below gives as 4:5 (`gallery-multi-drop-loading`,
+`gallery-import-documents`, `gallery-export-cargo`) were cropped 16:10 for now, because published
+pages only show them in 16:10 frames; the client's photographs should follow the table.
+
+Every path below is referenced in code and shows a branded placeholder until its file lands.
+Missing photographs are detected **at build time**:
 `scripts/build-image-manifest.mjs` runs before every `dev` and `build`, lists what is in
 `public/images`, and any slot not on that list renders its placeholder in the server HTML with no
 request for the missing file. Lightboxes skip missing photographs, and thumbnails are not
@@ -233,7 +247,8 @@ any cropping decisions being made later.
 
 The route renders but is not linked anywhere and carries `noindex`; `GALLERY_PUBLISHED` is
 `false`. A grid of placeholders undersells the business, and a grid of other companies' vehicles
-misrepresents it. To publish once real photographs exist: set `GALLERY_PUBLISHED` to `true` in
+misrepresents it — so do not publish it while the temporary stock images above are in place. To
+publish once real photographs exist: set `GALLERY_PUBLISHED` to `true` in
 `src/data/gallery.ts` and delete `'/gallery'` from the `exclude` array in `next-sitemap.config.js`.
 
 ### Bringing in photography

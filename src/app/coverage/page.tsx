@@ -25,7 +25,7 @@ export default function CoveragePage() {
         heading="Coverage and corridors"
         standfirst={COVERAGE_COPY.standfirst}
         image="/images/hero/hero-warehouse-storage.jpg"
-        imageAlt="A 4Jasmine Dr truck on the trunk road between Tema and Kumasi"
+        imageAlt="Wooden pallets stacked close together"
         crumbs={[{ label: 'Coverage', href: '/coverage' }]}
       />
 

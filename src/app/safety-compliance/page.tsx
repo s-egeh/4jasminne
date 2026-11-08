@@ -30,7 +30,7 @@ export default function SafetyCompliancePage() {
         heading="Safety, compliance and documentation"
         standfirst={SAFETY_STANDFIRST}
         image="/images/gallery/gallery-driver-briefing.jpg"
-        imageAlt="4Jasmine Dr drivers being briefed before departure"
+        imageAlt="A hard hat, work gloves, safety glasses and ear plugs on a table"
         crumbs={[
           { label: 'About', href: '/about' },
           { label: 'Safety & compliance', href: '/safety-compliance' },

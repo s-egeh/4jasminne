@@ -94,9 +94,9 @@ export const SERVICES: Service[] = [
       'Road freight across Ghana as full truckloads (FTL) or part loads (LTL). Each movement is planned around the collection and delivery windows the client needs.',
     icon: Truck,
     image: '/images/services/service-freight-haulage.jpg',
-    imageAlt: 'A loaded 4Jasmine Dr truck on a Ghanaian trunk road',
+    imageAlt: 'A truck and trailer on a highway below mountains',
     heroImage: '/images/services/service-freight-haulage.jpg',
-    heroImageAlt: 'A 4Jasmine Dr truck leaving Tema on a nationwide delivery',
+    heroImageAlt: 'A truck and trailer on a highway below mountains',
     bullets: [
       'Full truckload (FTL) movements, nationwide.',
       'Part-load (LTL) movements for smaller consignments.',
@@ -136,7 +136,7 @@ export const SERVICES: Service[] = [
       },
     ],
     gallery: [
-      { src: '/images/gallery/gallery-morning-dispatch.jpg', alt: '4Jasmine Dr trucks ready for dispatch in Tema' },
+      { src: '/images/gallery/gallery-morning-dispatch.jpg', alt: 'Trucks ready for dispatch' },
       { src: '/images/gallery/gallery-load-check.jpg', alt: 'A driver checking a load before departure' },
       { src: '/images/gallery/gallery-pallet-loading.jpg', alt: 'Palletised goods being loaded for a nationwide delivery' },
     ],
@@ -154,9 +154,9 @@ export const SERVICES: Service[] = [
       'Short- and long-term storage close to Tema Port, with goods received, recorded and released on instruction. Cross-docking moves goods straight from inbound to outbound when they do not need to be stored.',
     icon: Warehouse,
     image: '/images/services/service-warehousing-storage.jpg',
-    imageAlt: 'Palletised goods racked in a 4Jasmine Dr warehouse in Tema',
+    imageAlt: 'Stacks of wooden pallets in an open yard',
     heroImage: '/images/services/service-warehousing-storage.jpg',
-    heroImageAlt: 'Inside a 4Jasmine Dr warehouse in the Free Zone Enclave, Tema',
+    heroImageAlt: 'Stacks of wooden pallets in an open yard',
     bullets: [
       'Short-term and long-term storage.',
       'Goods received, recorded and released on instruction.',
@@ -196,9 +196,9 @@ export const SERVICES: Service[] = [
       },
     ],
     gallery: [
-      { src: '/images/gallery/gallery-goods-receiving.jpg', alt: 'Goods being received into the 4Jasmine Dr warehouse' },
-      { src: '/images/gallery/gallery-pallet-put-away.jpg', alt: 'Pallets being moved inside the warehouse' },
-      { src: '/images/gallery/gallery-loading-bay.jpg', alt: 'Goods staged at the loading bay for dispatch' },
+      { src: '/images/gallery/gallery-goods-receiving.jpg', alt: 'Goods being received into a warehouse' },
+      { src: '/images/gallery/gallery-pallet-put-away.jpg', alt: 'Pallets being moved inside a warehouse' },
+      { src: '/images/gallery/gallery-loading-bay.jpg', alt: 'A roller shutter door on an industrial building' },
     ],
   },
   {
@@ -214,9 +214,9 @@ export const SERVICES: Service[] = [
       'Scheduled distribution runs and last-mile delivery to the retail and trade customers who buy from you. Goods can go out from our warehouse or be collected from yours.',
     icon: Store,
     image: '/images/services/service-distribution.jpg',
-    imageAlt: 'A 4Jasmine Dr delivery being unloaded at a retail outlet',
+    imageAlt: 'A cardboard carton marked for order and item numbers',
     heroImage: '/images/services/service-distribution.jpg',
-    heroImageAlt: 'A 4Jasmine Dr delivery vehicle on a distribution run',
+    heroImageAlt: 'A cardboard carton marked for order and item numbers',
     bullets: [
       'Scheduled distribution runs to regular delivery points.',
       'Last-mile delivery to retail and trade customers.',
@@ -256,9 +256,9 @@ export const SERVICES: Service[] = [
       },
     ],
     gallery: [
-      { src: '/images/gallery/gallery-retail-delivery.jpg', alt: 'Cartons being handed over at a retail delivery point' },
-      { src: '/images/gallery/gallery-multi-drop-loading.jpg', alt: 'A delivery vehicle loaded for a multi-drop run' },
-      { src: '/images/gallery/gallery-delivery-signed.jpg', alt: 'A delivery being signed for at a trade customer' },
+      { src: '/images/gallery/gallery-retail-delivery.jpg', alt: 'A motor tricycle loaded with sacks' },
+      { src: '/images/gallery/gallery-multi-drop-loading.jpg', alt: 'A person packing a cardboard box at a desk' },
+      { src: '/images/gallery/gallery-delivery-signed.jpg', alt: 'A person filling in a form on a clipboard beside a parcel' },
     ],
   },
   {
@@ -274,9 +274,9 @@ export const SERVICES: Service[] = [
       'Coordination of import and export movements through Tema Port, with support on the port and customs documentation they need. The goods can then move straight into storage or onward delivery.',
     icon: Ship,
     image: '/images/services/service-freight-forwarding.jpg',
-    imageAlt: 'Containers at Tema Port awaiting collection',
+    imageAlt: 'Container stacks and cranes at a port, seen from above',
     heroImage: '/images/services/service-freight-forwarding.jpg',
-    heroImageAlt: 'Container cargo at Tema Port',
+    heroImageAlt: 'Container stacks and cranes at a port, seen from above',
     bullets: [
       'Coordination of import and export movements.',
       'Support with port and customs documentation.',
@@ -316,9 +316,9 @@ export const SERVICES: Service[] = [
       },
     ],
     gallery: [
-      { src: '/images/gallery/gallery-import-documents.jpg', alt: 'Shipping documents being checked for an import consignment' },
-      { src: '/images/gallery/gallery-port-collection.jpg', alt: 'A container being collected at Tema Port' },
-      { src: '/images/gallery/gallery-export-cargo.jpg', alt: 'Export cargo being prepared for the port' },
+      { src: '/images/gallery/gallery-import-documents.jpg', alt: 'A worker in a high-visibility vest writing on a clipboard' },
+      { src: '/images/gallery/gallery-port-collection.jpg', alt: 'A reach stacker beside a train of containers in a port yard' },
+      { src: '/images/gallery/gallery-export-cargo.jpg', alt: 'The doors of stacked shipping containers' },
     ],
   },
 ];

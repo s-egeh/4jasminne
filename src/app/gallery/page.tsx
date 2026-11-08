@@ -23,7 +23,7 @@ export default function GalleryPage() {
         heading="Gallery"
         standfirst="Our vehicles, our warehouse and our people."
         image="/images/gallery/gallery-highway-dusk.jpg"
-        imageAlt="A 4Jasmine Dr truck on a national highway at dusk"
+        imageAlt="A truck on a national highway at dusk"
         crumbs={[{ label: 'Gallery', href: '/gallery' }]}
       />
 

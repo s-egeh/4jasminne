@@ -27,7 +27,7 @@ export default function FaqPage() {
         heading="Frequently asked questions"
         standfirst="The questions we are asked most, answered plainly. If yours is not here, ask it directly."
         image="/images/gallery/gallery-loading-bay.jpg"
-        imageAlt="Goods staged at the 4Jasmine Dr loading bay ready for dispatch"
+        imageAlt="A roller shutter door on an industrial building"
         crumbs={[
           { label: 'About', href: '/about' },
           { label: 'FAQ', href: '/faq' },

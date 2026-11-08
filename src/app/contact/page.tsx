@@ -28,7 +28,7 @@ export default function ContactPage() {
         heading="Contact us"
         standfirst="Talk to the operations team about a consignment, storage or a shipment."
         image="/images/gallery/gallery-head-office.jpg"
-        imageAlt="The 4Jasmine Dr office in the Free Zone Enclave, Tema"
+        imageAlt="An office building"
         crumbs={[{ label: 'Contact', href: '/contact' }]}
         height="short"
       />

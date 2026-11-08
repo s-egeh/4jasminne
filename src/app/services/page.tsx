@@ -34,7 +34,7 @@ export default function ServicesPage() {
         heading="Services"
         standfirst="Freight, storage, distribution and forwarding — delivered by one accountable team."
         image="/images/hero/hero-vehicle-loading.jpg"
-        imageAlt="4Jasmine Dr vehicles at the warehouse in the Free Zone Enclave, Tema"
+        imageAlt="A forklift loading a pallet onto a truck trailer"
         crumbs={[{ label: 'Services', href: '/services' }]}
       />
 

@@ -30,7 +30,7 @@ export default function QuotePage() {
         heading="Request a quote"
         standfirst="Give us the details of the goods and we will come back with pricing and available dates."
         image="/images/hero/hero-highway-truck.jpg"
-        imageAlt="A loaded 4Jasmine Dr truck on a Ghanaian highway"
+        imageAlt="A tanker truck on a mountain highway"
         crumbs={[{ label: 'Request a quote', href: '/quote' }]}
         height="shortest"
       />
