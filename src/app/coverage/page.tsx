@@ -24,7 +24,7 @@ export default function CoveragePage() {
       <PageHero
         heading="Coverage and corridors"
         standfirst={COVERAGE_COPY.standfirst}
-        image="/images/hero/hero-02.jpg"
+        image="/images/hero/hero-warehouse-storage.jpg"
         imageAlt="A 4Jasmine Dr truck on the trunk road between Tema and Kumasi"
         crumbs={[{ label: 'Coverage', href: '/coverage' }]}
       />

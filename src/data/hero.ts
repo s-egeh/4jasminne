@@ -15,7 +15,7 @@ export interface HeroSlide {
 export const HERO_SLIDES: HeroSlide[] = [
   {
     id: 'logistics',
-    image: '/images/hero/hero-01.jpg',
+    image: '/images/hero/hero-highway-truck.jpg',
     imageAlt: 'A loaded 4Jasmine Dr truck on a Ghanaian highway',
     eyebrow: 'Logistics & Distribution',
     heading: 'Goods moved, stored and delivered — on schedule.',
@@ -27,7 +27,7 @@ export const HERO_SLIDES: HeroSlide[] = [
   },
   {
     id: 'warehousing',
-    image: '/images/hero/hero-02.jpg',
+    image: '/images/hero/hero-warehouse-storage.jpg',
     imageAlt: 'Palletised goods stored in the 4Jasmine Dr warehouse in Tema',
     eyebrow: 'Warehousing & Storage',
     heading: 'Storage close to the port.',
@@ -39,7 +39,7 @@ export const HERO_SLIDES: HeroSlide[] = [
   },
   {
     id: 'distribution',
-    image: '/images/hero/hero-03.jpg',
+    image: '/images/hero/hero-vehicle-loading.jpg',
     imageAlt: '4Jasmine Dr vehicles loading for distribution runs',
     eyebrow: 'Distribution',
     heading: 'Scheduled runs and last-mile delivery.',
@@ -51,7 +51,7 @@ export const HERO_SLIDES: HeroSlide[] = [
   },
   {
     id: 'forwarding',
-    image: '/images/hero/hero-04.jpg',
+    image: '/images/hero/hero-port-containers.jpg',
     imageAlt: 'Containers at Tema Port awaiting collection',
     eyebrow: 'Freight Forwarding',
     heading: 'From the port to where it is needed.',

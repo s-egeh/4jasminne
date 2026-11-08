@@ -29,7 +29,7 @@ export default function QuotePage() {
       <PageHero
         heading="Request a quote"
         standfirst="Give us the details of the goods and we will come back with pricing and available dates."
-        image="/images/hero/hero-01.jpg"
+        image="/images/hero/hero-highway-truck.jpg"
         imageAlt="A loaded 4Jasmine Dr truck on a Ghanaian highway"
         crumbs={[{ label: 'Request a quote', href: '/quote' }]}
         height="shortest"

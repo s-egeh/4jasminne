@@ -26,7 +26,7 @@ export default function FaqPage() {
       <PageHero
         heading="Frequently asked questions"
         standfirst="The questions we are asked most, answered plainly. If yours is not here, ask it directly."
-        image="/images/gallery/gallery-07.jpg"
+        image="/images/gallery/gallery-loading-bay.jpg"
         imageAlt="Goods staged at the 4Jasmine Dr loading bay ready for dispatch"
         crumbs={[
           { label: 'About', href: '/about' },

@@ -59,7 +59,7 @@ export default function AboutPage() {
       <PageHero
         heading="About 4Jasmine Dr"
         standfirst="Logistics and distribution from the Free Zone Enclave in Tema, for the companies that import, manufacture and trade in Ghana."
-        image="/images/hero/hero-01.jpg"
+        image="/images/hero/hero-highway-truck.jpg"
         imageAlt="A 4Jasmine Dr truck leaving the Free Zone Enclave, Tema, at first light"
         crumbs={[{ label: 'About', href: '/about' }]}
       />

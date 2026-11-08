@@ -32,8 +32,8 @@ export interface FleetUnit {
  * hired in or subcontracted rather than owned, say so and the copy on /fleet
  * will be adjusted to match.
  *
- * Image paths are photography slots kept from the original build so that no
- * layout moves; HANDOVER.md says what each slot should now show.
+ * Each photograph is named after its vehicle type's slug (fleet-<slug>.jpg);
+ * HANDOVER.md says what each one should show.
  */
 
 export const FLEET_FILTERS: { value: FleetCategory | 'all'; label: string }[] = [
@@ -50,7 +50,7 @@ export const FLEET: FleetUnit[] = [
     slug: 'articulated-truck',
     name: 'Articulated trucks',
     category: 'long-haul',
-    image: '/images/fleet/fleet-trailer.jpg',
+    image: '/images/fleet/fleet-articulated-truck.jpg',
     imageAlt: 'A 4Jasmine Dr articulated truck loaded for a long-haul delivery',
     summary: 'Full loads over long distances, from Tema to the regions.',
     specs: [
@@ -60,15 +60,15 @@ export const FLEET: FleetUnit[] = [
       { label: 'Availability', value: 'Per consignment, or planned under an arrangement' },
     ],
     gallery: [
-      { src: '/images/fleet/fleet-trailer.jpg', alt: 'Articulated truck on a national route' },
-      { src: '/images/gallery/gallery-01.jpg', alt: 'Trucks ready for dispatch in Tema' },
+      { src: '/images/fleet/fleet-articulated-truck.jpg', alt: 'Articulated truck on a national route' },
+      { src: '/images/gallery/gallery-morning-dispatch.jpg', alt: 'Trucks ready for dispatch in Tema' },
     ],
   },
   {
     slug: 'rigid-truck',
     name: 'Rigid box and curtain-side trucks',
     category: 'rigid',
-    image: '/images/fleet/fleet-tanker.jpg',
+    image: '/images/fleet/fleet-rigid-truck.jpg',
     imageAlt: 'A 4Jasmine Dr rigid box truck being loaded at the warehouse',
     summary: 'Enclosed vehicles for part loads and distribution runs.',
     specs: [
@@ -78,15 +78,15 @@ export const FLEET: FleetUnit[] = [
       { label: 'Availability', value: 'Per consignment, or on a scheduled run' },
     ],
     gallery: [
-      { src: '/images/fleet/fleet-tanker.jpg', alt: 'Rigid box truck at the loading bay' },
-      { src: '/images/gallery/gallery-03.jpg', alt: 'Goods being loaded for delivery' },
+      { src: '/images/fleet/fleet-rigid-truck.jpg', alt: 'Rigid box truck at the loading bay' },
+      { src: '/images/gallery/gallery-pallet-loading.jpg', alt: 'Goods being loaded for delivery' },
     ],
   },
   {
     slug: 'delivery-vehicle',
     name: 'Light delivery vehicles',
     category: 'last-mile',
-    image: '/images/fleet/fleet-tipper.jpg',
+    image: '/images/fleet/fleet-delivery-vehicle.jpg',
     imageAlt: 'A 4Jasmine Dr light delivery vehicle at a retail drop',
     summary: 'Last-mile and multi-drop delivery to shops and trade customers.',
     specs: [
@@ -96,15 +96,15 @@ export const FLEET: FleetUnit[] = [
       { label: 'Availability', value: 'Scheduled runs or per order' },
     ],
     gallery: [
-      { src: '/images/fleet/fleet-tipper.jpg', alt: 'Light delivery vehicle on a distribution run' },
-      { src: '/images/gallery/gallery-10.jpg', alt: 'Delivery vehicle loaded for a multi-drop run' },
+      { src: '/images/fleet/fleet-delivery-vehicle.jpg', alt: 'Light delivery vehicle on a distribution run' },
+      { src: '/images/gallery/gallery-multi-drop-loading.jpg', alt: 'Delivery vehicle loaded for a multi-drop run' },
     ],
   },
   {
     slug: 'container-trailer',
     name: 'Container trailers',
     category: 'container',
-    image: '/images/fleet/fleet-flatbed.jpg',
+    image: '/images/fleet/fleet-container-trailer.jpg',
     imageAlt: 'A container on a 4Jasmine Dr trailer leaving Tema Port',
     summary: 'Containers between Tema Port, the Free Zone Enclave and inland.',
     specs: [
@@ -114,15 +114,15 @@ export const FLEET: FleetUnit[] = [
       { label: 'Availability', value: 'Per container, booked against release' },
     ],
     gallery: [
-      { src: '/images/fleet/fleet-flatbed.jpg', alt: 'Container on a trailer at the port' },
-      { src: '/images/gallery/gallery-14.jpg', alt: 'Container being collected at Tema Port' },
+      { src: '/images/fleet/fleet-container-trailer.jpg', alt: 'Container on a trailer at the port' },
+      { src: '/images/gallery/gallery-port-collection.jpg', alt: 'Container being collected at Tema Port' },
     ],
   },
   {
     slug: 'handling-equipment',
     name: 'Warehouse handling equipment',
     category: 'handling',
-    image: '/images/fleet/fleet-excavator.jpg',
+    image: '/images/fleet/fleet-handling-equipment.jpg',
     imageAlt: 'Forklift moving palletised goods inside the 4Jasmine Dr warehouse',
     summary: 'Equipment for receiving, storing and loading goods in the warehouse.',
     specs: [
@@ -131,8 +131,8 @@ export const FLEET: FleetUnit[] = [
       { label: 'Location', value: 'Warehouse in the Free Zone Enclave, Tema' },
     ],
     gallery: [
-      { src: '/images/fleet/fleet-excavator.jpg', alt: 'Forklift in the warehouse' },
-      { src: '/images/gallery/gallery-06.jpg', alt: 'Pallets being moved inside the warehouse' },
+      { src: '/images/fleet/fleet-handling-equipment.jpg', alt: 'Forklift in the warehouse' },
+      { src: '/images/gallery/gallery-pallet-put-away.jpg', alt: 'Pallets being moved inside the warehouse' },
     ],
   },
 ];

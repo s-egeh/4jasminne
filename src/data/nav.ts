@@ -58,7 +58,7 @@ export const NAV: NavItem[] = [
         : []),
     ],
     feature: {
-      image: '/images/gallery/gallery-23.jpg',
+      image: '/images/gallery/gallery-head-office.jpg',
       imageAlt: 'The 4Jasmine Dr office in the Free Zone Enclave, Tema',
       line: 'Logistics and distribution from the Free Zone Enclave, Tema.',
       cta: { label: 'Read about us', href: '/about' },
@@ -76,7 +76,7 @@ export const NAV: NavItem[] = [
       })),
     ],
     feature: {
-      image: '/images/hero/hero-03.jpg',
+      image: '/images/hero/hero-vehicle-loading.jpg',
       imageAlt: '4Jasmine Dr vehicles at the warehouse in the Free Zone Enclave, Tema',
       line: 'Freight, storage, distribution and forwarding from one team.',
       cta: { label: 'Request a quote', href: '/quote' },

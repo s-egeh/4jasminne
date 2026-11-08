@@ -4,10 +4,9 @@
  *   node scripts/ingest-image.mjs <source> <slot> [--alt "…"] [--source-url URL]
  *                                 [--credit "…"] [--licence "…"] [--focus top|bottom|left|right]
  *
- *   node scripts/ingest-image.mjs ./truck.jpg hero/hero-01 \
+ *   node scripts/ingest-image.mjs ./client-photos/IMG_0412.jpg hero/hero-highway-truck \
  *     --alt "A loaded 4Jasmine Dr truck on the Accra–Tema motorway at dawn" \
- *     --source-url https://www.pexels.com/photo/12345 \
- *     --credit "Photographer Name / Pexels" --licence "Pexels licence"
+ *     --credit "4Jasmine Dr" --licence "Supplied by the client"
  *
  * `source` may be a local path or an http(s) URL.
  * `slot` is the destination path under /public/images, without extension.

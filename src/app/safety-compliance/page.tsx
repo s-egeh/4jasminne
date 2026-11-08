@@ -29,7 +29,7 @@ export default function SafetyCompliancePage() {
       <PageHero
         heading="Safety, compliance and documentation"
         standfirst={SAFETY_STANDFIRST}
-        image="/images/gallery/gallery-16.jpg"
+        image="/images/gallery/gallery-driver-briefing.jpg"
         imageAlt="4Jasmine Dr drivers being briefed before departure"
         crumbs={[
           { label: 'About', href: '/about' },

@@ -40,7 +40,7 @@ export default function ClientsPage() {
       <PageHero
         heading="Clients and partners"
         standfirst="Ongoing arrangements with companies that depend on their goods arriving on time."
-        image="/images/gallery/gallery-18.jpg"
+        image="/images/gallery/gallery-distributor-unloading.jpg"
         imageAlt="A 4Jasmine Dr delivery being unloaded at a distributor’s warehouse"
         crumbs={[{ label: 'Clients', href: '/clients' }]}
       />

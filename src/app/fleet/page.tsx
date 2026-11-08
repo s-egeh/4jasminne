@@ -37,7 +37,7 @@ export default function FleetPage() {
       <PageHero
         heading="Our fleet"
         standfirst="Vehicles and handling equipment matched to the goods, maintained to schedule and checked before every departure."
-        image="/images/fleet/fleet-trailer.jpg"
+        image="/images/fleet/fleet-articulated-truck.jpg"
         imageAlt="4Jasmine Dr trucks lined up in the Free Zone Enclave, Tema"
         crumbs={[{ label: 'Fleet', href: '/fleet' }]}
       />

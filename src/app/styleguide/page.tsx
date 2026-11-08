@@ -214,7 +214,7 @@ export default function StyleguidePage() {
               <CsrCard
                 title="Card title"
                 description="A short line describing the item on this card."
-                image="/images/gallery/gallery-05.jpg"
+                image="/images/gallery/gallery-goods-receiving.jpg"
                 imageAlt="Example card image"
               />
             </div>
@@ -223,7 +223,7 @@ export default function StyleguidePage() {
 
         <Block title="Placeholders">
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
-            <ImagePlaceholder className="aspect-card w-full" label="hero-01.jpg" />
+            <ImagePlaceholder className="aspect-card w-full" label="hero-highway-truck.jpg" />
             <MonogramTile initials="4J" className="aspect-portrait w-full" />
             <div className="flex aspect-card w-full items-center justify-center border border-line">
               <WordmarkTile name="Client name" />

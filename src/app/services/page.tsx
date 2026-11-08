@@ -33,7 +33,7 @@ export default function ServicesPage() {
       <PageHero
         heading="Services"
         standfirst="Freight, storage, distribution and forwarding — delivered by one accountable team."
-        image="/images/hero/hero-03.jpg"
+        image="/images/hero/hero-vehicle-loading.jpg"
         imageAlt="4Jasmine Dr vehicles at the warehouse in the Free Zone Enclave, Tema"
         crumbs={[{ label: 'Services', href: '/services' }]}
       />

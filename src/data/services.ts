@@ -76,9 +76,9 @@ export interface Service {
 }
 
 /*
- * Image paths are the photography slots listed in HANDOVER.md. The filenames
- * are kept from the original build so no layout or reference moves; the
- * manifest says what each slot should now show.
+ * Each service's photograph is named after its slug (service-<slug>.jpg), so
+ * the photograph for /services/distribution is service-distribution.jpg.
+ * HANDOVER.md lists every slot and what it should show.
  */
 export const SERVICES: Service[] = [
   {
@@ -93,9 +93,9 @@ export const SERVICES: Service[] = [
     summary:
       'Road freight across Ghana as full truckloads (FTL) or part loads (LTL). Each movement is planned around the collection and delivery windows the client needs.',
     icon: Truck,
-    image: '/images/services/service-logistics.jpg',
+    image: '/images/services/service-freight-haulage.jpg',
     imageAlt: 'A loaded 4Jasmine Dr truck on a Ghanaian trunk road',
-    heroImage: '/images/services/service-logistics.jpg',
+    heroImage: '/images/services/service-freight-haulage.jpg',
     heroImageAlt: 'A 4Jasmine Dr truck leaving Tema on a nationwide delivery',
     bullets: [
       'Full truckload (FTL) movements, nationwide.',
@@ -136,9 +136,9 @@ export const SERVICES: Service[] = [
       },
     ],
     gallery: [
-      { src: '/images/gallery/gallery-01.jpg', alt: '4Jasmine Dr trucks ready for dispatch in Tema' },
-      { src: '/images/gallery/gallery-02.jpg', alt: 'A driver checking a load before departure' },
-      { src: '/images/gallery/gallery-03.jpg', alt: 'Palletised goods being loaded for a nationwide delivery' },
+      { src: '/images/gallery/gallery-morning-dispatch.jpg', alt: '4Jasmine Dr trucks ready for dispatch in Tema' },
+      { src: '/images/gallery/gallery-load-check.jpg', alt: 'A driver checking a load before departure' },
+      { src: '/images/gallery/gallery-pallet-loading.jpg', alt: 'Palletised goods being loaded for a nationwide delivery' },
     ],
   },
   {
@@ -153,9 +153,9 @@ export const SERVICES: Service[] = [
     summary:
       'Short- and long-term storage close to Tema Port, with goods received, recorded and released on instruction. Cross-docking moves goods straight from inbound to outbound when they do not need to be stored.',
     icon: Warehouse,
-    image: '/images/services/service-goods.jpg',
+    image: '/images/services/service-warehousing-storage.jpg',
     imageAlt: 'Palletised goods racked in a 4Jasmine Dr warehouse in Tema',
-    heroImage: '/images/services/service-goods.jpg',
+    heroImage: '/images/services/service-warehousing-storage.jpg',
     heroImageAlt: 'Inside a 4Jasmine Dr warehouse in the Free Zone Enclave, Tema',
     bullets: [
       'Short-term and long-term storage.',
@@ -196,9 +196,9 @@ export const SERVICES: Service[] = [
       },
     ],
     gallery: [
-      { src: '/images/gallery/gallery-05.jpg', alt: 'Goods being received into the 4Jasmine Dr warehouse' },
-      { src: '/images/gallery/gallery-06.jpg', alt: 'Pallets being moved inside the warehouse' },
-      { src: '/images/gallery/gallery-07.jpg', alt: 'Goods staged at the loading bay for dispatch' },
+      { src: '/images/gallery/gallery-goods-receiving.jpg', alt: 'Goods being received into the 4Jasmine Dr warehouse' },
+      { src: '/images/gallery/gallery-pallet-put-away.jpg', alt: 'Pallets being moved inside the warehouse' },
+      { src: '/images/gallery/gallery-loading-bay.jpg', alt: 'Goods staged at the loading bay for dispatch' },
     ],
   },
   {
@@ -213,9 +213,9 @@ export const SERVICES: Service[] = [
     summary:
       'Scheduled distribution runs and last-mile delivery to the retail and trade customers who buy from you. Goods can go out from our warehouse or be collected from yours.',
     icon: Store,
-    image: '/images/services/service-leasing.jpg',
+    image: '/images/services/service-distribution.jpg',
     imageAlt: 'A 4Jasmine Dr delivery being unloaded at a retail outlet',
-    heroImage: '/images/services/service-leasing.jpg',
+    heroImage: '/images/services/service-distribution.jpg',
     heroImageAlt: 'A 4Jasmine Dr delivery vehicle on a distribution run',
     bullets: [
       'Scheduled distribution runs to regular delivery points.',
@@ -256,9 +256,9 @@ export const SERVICES: Service[] = [
       },
     ],
     gallery: [
-      { src: '/images/gallery/gallery-09.jpg', alt: 'Cartons being handed over at a retail delivery point' },
-      { src: '/images/gallery/gallery-10.jpg', alt: 'A delivery vehicle loaded for a multi-drop run' },
-      { src: '/images/gallery/gallery-11.jpg', alt: 'A delivery being signed for at a trade customer' },
+      { src: '/images/gallery/gallery-retail-delivery.jpg', alt: 'Cartons being handed over at a retail delivery point' },
+      { src: '/images/gallery/gallery-multi-drop-loading.jpg', alt: 'A delivery vehicle loaded for a multi-drop run' },
+      { src: '/images/gallery/gallery-delivery-signed.jpg', alt: 'A delivery being signed for at a trade customer' },
     ],
   },
   {
@@ -273,9 +273,9 @@ export const SERVICES: Service[] = [
     summary:
       'Coordination of import and export movements through Tema Port, with support on the port and customs documentation they need. The goods can then move straight into storage or onward delivery.',
     icon: Ship,
-    image: '/images/services/service-commodity.jpg',
+    image: '/images/services/service-freight-forwarding.jpg',
     imageAlt: 'Containers at Tema Port awaiting collection',
-    heroImage: '/images/services/service-commodity.jpg',
+    heroImage: '/images/services/service-freight-forwarding.jpg',
     heroImageAlt: 'Container cargo at Tema Port',
     bullets: [
       'Coordination of import and export movements.',
@@ -316,9 +316,9 @@ export const SERVICES: Service[] = [
       },
     ],
     gallery: [
-      { src: '/images/gallery/gallery-13.jpg', alt: 'Shipping documents being checked for an import consignment' },
-      { src: '/images/gallery/gallery-14.jpg', alt: 'A container being collected at Tema Port' },
-      { src: '/images/gallery/gallery-15.jpg', alt: 'Export cargo being prepared for the port' },
+      { src: '/images/gallery/gallery-import-documents.jpg', alt: 'Shipping documents being checked for an import consignment' },
+      { src: '/images/gallery/gallery-port-collection.jpg', alt: 'A container being collected at Tema Port' },
+      { src: '/images/gallery/gallery-export-cargo.jpg', alt: 'Export cargo being prepared for the port' },
     ],
   },
 ];

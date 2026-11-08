@@ -45,7 +45,7 @@ export default function TeamPage() {
       <PageHero
         heading="Management team"
         standfirst="The people accountable for your goods, from the port to the final delivery."
-        image="/images/gallery/gallery-23.jpg"
+        image="/images/gallery/gallery-head-office.jpg"
         imageAlt="The 4Jasmine Dr team at the office in the Free Zone Enclave, Tema"
         crumbs={[{ label: 'Team', href: '/team' }]}
       />

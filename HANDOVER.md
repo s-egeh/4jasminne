@@ -173,54 +173,57 @@ until the file lands. Missing photographs are detected **at build time**:
 request for the missing file. Lightboxes skip missing photographs, and thumbnails are not
 clickable until their photograph exists. Drop a file in and rebuild — no code change.
 
-**The filenames are slot names, kept from the original build.** Some describe the old company's
-subject (`fleet-tipper.jpg`, `service-leasing.jpg`). They were deliberately not renamed, so that no
-reference, aspect ratio or layout moves. The table says what each slot should now show. The
-subjects below are a proposal for 4Jasmine Dr's operations — reconcile them with the client's own
-shot list before commissioning.
+**Each filename names what the photograph shows.** Service and fleet photographs are named after
+their page's address: the photograph for `/services/distribution` is `service-distribution.jpg`,
+and the rigid truck on `/fleet` is `fleet-rigid-truck.jpg`. Hero and gallery photographs are
+named after their subject, because several of them are reused across pages. If the client's
+shot list changes what a slot shows, rename the file, its reference in `src/data` and its row
+here together, so that a name never describes a different picture. The subjects below are a
+proposal for 4Jasmine Dr's operations — reconcile them with the client's own shot list before
+commissioning.
 
 The ratio is enforced by the layout, so a photograph delivered at the stated ratio drops in without
 any cropping decisions being made later.
 
 | Path | Ratio | Suggested px | What the photograph should show |
 |---|---|---|---|
-| `hero/hero-01.jpg` | 16:10 | 2400×1500 | A loaded 4Jasmine Dr truck on a Ghanaian highway, shot low, early light. Homepage slide 1, `/about`, `/quote`. |
-| `hero/hero-02.jpg` | 16:10 | 2400×1500 | Inside the warehouse: palletised goods in storage. Homepage slide 2, `/coverage`. |
-| `hero/hero-03.jpg` | 16:10 | 2400×1500 | Vehicles loading at the warehouse in the Free Zone Enclave. Homepage slide 3, `/services`, the Services mega-menu. |
-| `hero/hero-04.jpg` | 16:10 | 2400×1500 | Containers at Tema Port. Homepage slide 4. |
-| `services/service-logistics.jpg` | 16:10 | 1600×1000 | **Freight & Haulage** — a loaded truck on a trunk road. |
-| `services/service-goods.jpg` | 16:10 | 1600×1000 | **Warehousing & Storage** — racked or stacked pallets in the warehouse. |
-| `services/service-leasing.jpg` | 16:10 | 1600×1000 | **Distribution** — a delivery being unloaded at a retail outlet. |
-| `services/service-commodity.jpg` | 16:10 | 1600×1000 | **Freight Forwarding** — containers at Tema Port awaiting collection. |
-| `fleet/fleet-trailer.jpg` | 4:3 | 1600×1200 | **Articulated truck** loaded for a long-haul delivery. Also the `/fleet` hero. |
-| `fleet/fleet-tanker.jpg` | 4:3 | 1600×1200 | **Rigid box or curtain-side truck** being loaded at the warehouse. |
-| `fleet/fleet-tipper.jpg` | 4:3 | 1600×1200 | **Light delivery vehicle** at a retail drop. |
-| `fleet/fleet-flatbed.jpg` | 4:3 | 1600×1200 | **Container trailer** leaving Tema Port. |
-| `fleet/fleet-excavator.jpg` | 4:3 | 1600×1200 | **Warehouse handling equipment** — a forklift moving pallets. |
-| `gallery/gallery-01.jpg` | 16:10 | ≥1600 long edge | Trucks lined up in the Free Zone Enclave before morning dispatch. Also beside the homepage introduction. |
-| `gallery/gallery-02.jpg` | 4:5 | ≥1600 long edge | A driver checking how a load is secured before departure. Also beside the homepage introduction. |
-| `gallery/gallery-03.jpg` | 16:10 | ≥1600 long edge | Palletised goods being loaded for a nationwide delivery. |
-| `gallery/gallery-04.jpg` | 4:5 | ≥1600 long edge | A rigid truck on a delivery route in Greater Accra. |
-| `gallery/gallery-05.jpg` | 16:10 | ≥1600 long edge | Goods being received into the warehouse. |
-| `gallery/gallery-06.jpg` | 4:5 | ≥1600 long edge | Pallets being moved inside the warehouse. |
-| `gallery/gallery-07.jpg` | 16:10 | ≥1600 long edge | Goods staged at the loading bay for dispatch. Also the `/faq` hero. |
-| `gallery/gallery-08.jpg` | 4:5 | ≥1600 long edge | The operations team planning the day's dispatches. |
-| `gallery/gallery-09.jpg` | 16:10 | ≥1600 long edge | Cartons handed over at a retail delivery point. |
-| `gallery/gallery-10.jpg` | 4:5 | ≥1600 long edge | A delivery vehicle loaded in drop order for a multi-drop run. |
-| `gallery/gallery-11.jpg` | 16:10 | ≥1600 long edge | A delivery being signed for at a trade customer. |
-| `gallery/gallery-12.jpg` | 16:10 | ≥1600 long edge | A truck on a national highway at dusk. Also the `/gallery` hero. |
-| `gallery/gallery-13.jpg` | 4:5 | ≥1600 long edge | Shipping documents being checked for an import. |
-| `gallery/gallery-14.jpg` | 16:10 | ≥1600 long edge | A container being collected at Tema Port. |
-| `gallery/gallery-15.jpg` | 4:5 | ≥1600 long edge | Export cargo being prepared for the port. |
-| `gallery/gallery-16.jpg` | 16:10 | ≥1600 long edge | Drivers being briefed before departure. Also the `/safety-compliance` hero. |
-| `gallery/gallery-17.jpg` | 4:5 | ≥1600 long edge | Stock records being checked in the warehouse. |
-| `gallery/gallery-18.jpg` | 16:10 | ≥1600 long edge | A delivery being unloaded at a distributor's warehouse. Also the `/clients` hero. |
-| `gallery/gallery-19.jpg` | 16:10 | ≥1600 long edge | Cross-docking: goods moving straight from an inbound to an outbound vehicle. |
-| `gallery/gallery-20.jpg` | 4:5 | ≥1600 long edge | Goods being wrapped and secured on a pallet. |
-| `gallery/gallery-21.jpg` | 16:10 | ≥1600 long edge | A container being unloaded at the warehouse. |
-| `gallery/gallery-22.jpg` | 4:5 | ≥1600 long edge | A light delivery vehicle in Tema. |
-| `gallery/gallery-23.jpg` | 16:10 | ≥1600 long edge | The office in the Free Zone Enclave. Also the `/contact` and `/team` heroes and the About mega-menu. |
-| `gallery/gallery-24.jpg` | 4:5 | ≥1600 long edge | A loaded truck leaving the Free Zone Enclave at first light. |
+| `hero/hero-highway-truck.jpg` | 16:10 | 2400×1500 | A loaded 4Jasmine Dr truck on a Ghanaian highway, shot low, early light. Homepage slide 1, `/about`, `/quote`. |
+| `hero/hero-warehouse-storage.jpg` | 16:10 | 2400×1500 | Inside the warehouse: palletised goods in storage. Homepage slide 2, `/coverage`. |
+| `hero/hero-vehicle-loading.jpg` | 16:10 | 2400×1500 | Vehicles loading at the warehouse in the Free Zone Enclave. Homepage slide 3, `/services`, the Services mega-menu. |
+| `hero/hero-port-containers.jpg` | 16:10 | 2400×1500 | Containers at Tema Port. Homepage slide 4. |
+| `services/service-freight-haulage.jpg` | 16:10 | 1600×1000 | **Freight & Haulage** — a loaded truck on a trunk road. |
+| `services/service-warehousing-storage.jpg` | 16:10 | 1600×1000 | **Warehousing & Storage** — racked or stacked pallets in the warehouse. |
+| `services/service-distribution.jpg` | 16:10 | 1600×1000 | **Distribution** — a delivery being unloaded at a retail outlet. |
+| `services/service-freight-forwarding.jpg` | 16:10 | 1600×1000 | **Freight Forwarding** — containers at Tema Port awaiting collection. |
+| `fleet/fleet-articulated-truck.jpg` | 4:3 | 1600×1200 | **Articulated truck** loaded for a long-haul delivery. Also the `/fleet` hero. |
+| `fleet/fleet-rigid-truck.jpg` | 4:3 | 1600×1200 | **Rigid box or curtain-side truck** being loaded at the warehouse. |
+| `fleet/fleet-delivery-vehicle.jpg` | 4:3 | 1600×1200 | **Light delivery vehicle** at a retail drop. |
+| `fleet/fleet-container-trailer.jpg` | 4:3 | 1600×1200 | **Container trailer** leaving Tema Port. |
+| `fleet/fleet-handling-equipment.jpg` | 4:3 | 1600×1200 | **Warehouse handling equipment** — a forklift moving pallets. |
+| `gallery/gallery-morning-dispatch.jpg` | 16:10 | ≥1600 long edge | Trucks lined up in the Free Zone Enclave before morning dispatch. Also beside the homepage introduction. |
+| `gallery/gallery-load-check.jpg` | 4:5 | ≥1600 long edge | A driver checking how a load is secured before departure. Also beside the homepage introduction. |
+| `gallery/gallery-pallet-loading.jpg` | 16:10 | ≥1600 long edge | Palletised goods being loaded for a nationwide delivery. |
+| `gallery/gallery-rigid-truck-accra.jpg` | 4:5 | ≥1600 long edge | A rigid truck on a delivery route in Greater Accra. |
+| `gallery/gallery-goods-receiving.jpg` | 16:10 | ≥1600 long edge | Goods being received into the warehouse. |
+| `gallery/gallery-pallet-put-away.jpg` | 4:5 | ≥1600 long edge | Pallets being moved inside the warehouse. |
+| `gallery/gallery-loading-bay.jpg` | 16:10 | ≥1600 long edge | Goods staged at the loading bay for dispatch. Also the `/faq` hero. |
+| `gallery/gallery-dispatch-planning.jpg` | 4:5 | ≥1600 long edge | The operations team planning the day's dispatches. |
+| `gallery/gallery-retail-delivery.jpg` | 16:10 | ≥1600 long edge | Cartons handed over at a retail delivery point. |
+| `gallery/gallery-multi-drop-loading.jpg` | 4:5 | ≥1600 long edge | A delivery vehicle loaded in drop order for a multi-drop run. |
+| `gallery/gallery-delivery-signed.jpg` | 16:10 | ≥1600 long edge | A delivery being signed for at a trade customer. |
+| `gallery/gallery-highway-dusk.jpg` | 16:10 | ≥1600 long edge | A truck on a national highway at dusk. Also the `/gallery` hero. |
+| `gallery/gallery-import-documents.jpg` | 4:5 | ≥1600 long edge | Shipping documents being checked for an import. |
+| `gallery/gallery-port-collection.jpg` | 16:10 | ≥1600 long edge | A container being collected at Tema Port. |
+| `gallery/gallery-export-cargo.jpg` | 4:5 | ≥1600 long edge | Export cargo being prepared for the port. |
+| `gallery/gallery-driver-briefing.jpg` | 16:10 | ≥1600 long edge | Drivers being briefed before departure. Also the `/safety-compliance` hero. |
+| `gallery/gallery-stock-check.jpg` | 4:5 | ≥1600 long edge | Stock records being checked in the warehouse. |
+| `gallery/gallery-distributor-unloading.jpg` | 16:10 | ≥1600 long edge | A delivery being unloaded at a distributor's warehouse. Also the `/clients` hero. |
+| `gallery/gallery-cross-docking.jpg` | 16:10 | ≥1600 long edge | Cross-docking: goods moving straight from an inbound to an outbound vehicle. |
+| `gallery/gallery-pallet-wrapping.jpg` | 4:5 | ≥1600 long edge | Goods being wrapped and secured on a pallet. |
+| `gallery/gallery-container-unloading.jpg` | 16:10 | ≥1600 long edge | A container being unloaded at the warehouse. |
+| `gallery/gallery-last-mile-tema.jpg` | 4:5 | ≥1600 long edge | A light delivery vehicle in Tema. |
+| `gallery/gallery-head-office.jpg` | 16:10 | ≥1600 long edge | The office in the Free Zone Enclave. Also the `/contact` and `/team` heroes and the About mega-menu. |
+| `gallery/gallery-first-light-departure.jpg` | 4:5 | ≥1600 long edge | A loaded truck leaving the Free Zone Enclave at first light. |
 | `team/team-<name>.jpg` | 4:5 | 800×1000 | One portrait per team member, path set in `src/data/team.ts`. Until supplied, a monogram tile shows. |
 | `csr/…` | 16:10 | 1600×1000 | One per community initiative, path set in `src/data/csr.ts`. |
 | `clients/client-*.png` | — | max height 48px | Transparent logos, **supplied by the client only** and only with each company's permission. Never sourced from the web. |

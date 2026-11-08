@@ -49,14 +49,14 @@ export function IntroSplit() {
           {/* Stacked pair: 4:5 portrait overlapping a 16:10 by 40px. */}
           <Reveal delay={200} className="relative mt-14 hidden max-w-[420px] lg:block">
             <Figure
-              src="/images/gallery/gallery-01.jpg"
+              src="/images/gallery/gallery-morning-dispatch.jpg"
               alt="4Jasmine Dr trucks lined up in the Free Zone Enclave before dispatch"
               className="aspect-card w-full"
               imageClassName="h-full w-full"
               sizes="420px"
             />
             <Figure
-              src="/images/gallery/gallery-02.jpg"
+              src="/images/gallery/gallery-load-check.jpg"
               alt="A driver checking how a load is secured before departure"
               className="absolute -bottom-10 right-0 aspect-portrait w-[45%] border-[6px] border-bone"
               imageClassName="h-full w-full"
